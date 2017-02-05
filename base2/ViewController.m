@@ -85,7 +85,7 @@
     Camp *camp = array[indexPath.section];
     NSMutableArray *memberArray = [NSMutableArray arrayWithArray:[camp getMembers]];
     [memberArray removeObjectAtIndex:indexPath.row];
-    //tes1
+    //tes2
 }
 
 - (void)tableView:(UITableView*)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath {
