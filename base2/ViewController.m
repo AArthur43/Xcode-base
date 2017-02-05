@@ -9,14 +9,19 @@
 #import "ViewController.h"
 #import "CharacterTableCell.h"
 #import "Character.h"
+#import "CollectionViewDataSource.h"
+
 
 #import "MarvelCharacterProvider.h"
 #import "Camp.h"
 #import "Member.h"
 
 @interface ViewController ()
-
+{
+    CollectionViewDataSource *_collectionViewDataSource;
+}
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -28,6 +33,9 @@
 
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    _collectionViewDataSource = [CollectionViewDataSource new];
+    self.collectionView.dataSource = _collectionViewDataSource;
 }
 
 

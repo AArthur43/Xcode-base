@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0B994E1E47795800B819AE /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B994D1E47795800B819AE /* CollectionViewDataSource.m */; };
 		8E816D6C1E28AE24006A58FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E816D6B1E28AE24006A58FB /* main.m */; };
 		8E816D6F1E28AE24006A58FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E816D6E1E28AE24006A58FB /* AppDelegate.m */; };
 		8E816D721E28AE24006A58FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E816D711E28AE24006A58FB /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E0B994C1E47795800B819AE /* CollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewDataSource.h; path = ../CollectionViewDataSource.h; sourceTree = "<group>"; };
+		8E0B994D1E47795800B819AE /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewDataSource.m; path = ../CollectionViewDataSource.m; sourceTree = "<group>"; };
 		8E816D671E28AE24006A58FB /* base2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = base2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E816D6B1E28AE24006A58FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E816D6D1E28AE24006A58FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,8 +61,8 @@
 		8E816D8B1E28AE24006A58FB /* base2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = base2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E816D8F1E28AE24006A58FB /* base2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = base2UITests.m; sourceTree = "<group>"; };
 		8E816D911E28AE24006A58FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E816D9D1E28B292006A58FB /* CharacterTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableCell.h; sourceTree = "<group>"; };
-		8E816D9E1E28B292006A58FB /* CharacterTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableCell.m; sourceTree = "<group>"; };
+		8E816D9D1E28B292006A58FB /* CharacterTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharacterTableCell.h; path = ../CharacterTableCell.h; sourceTree = "<group>"; };
+		8E816D9E1E28B292006A58FB /* CharacterTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CharacterTableCell.m; path = ../CharacterTableCell.m; sourceTree = "<group>"; };
 		8E816DA11E28B7E9006A58FB /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
 		8E816DA21E28B7E9006A58FB /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		8E816DA41E2E0057006A58FB /* Week1_Character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Week1_Character.json; sourceTree = "<group>"; };
@@ -97,14 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E0B994B1E47792100B819AE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8E816DAE1E43035A006A58FB /* MarvelCharacterProvider.h */,
+				8E816DAF1E43035A006A58FB /* MarvelCharacterProvider.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		8E816D5E1E28AE24006A58FB = {
 			isa = PBXGroup;
 			children = (
 				8E816DA41E2E0057006A58FB /* Week1_Character.json */,
 				8E816DA61E2E0078006A58FB /* CharacterImage */,
 				8E816DA01E28B7C2006A58FB /* Model */,
-				8E816D9D1E28B292006A58FB /* CharacterTableCell.h */,
-				8E816D9E1E28B292006A58FB /* CharacterTableCell.m */,
+				8E0B994B1E47792100B819AE /* Service */,
 				8E816D691E28AE24006A58FB /* base2 */,
 				8E816D831E28AE24006A58FB /* base2Tests */,
 				8E816D8E1E28AE24006A58FB /* base2UITests */,
@@ -129,6 +140,10 @@
 				8E816D6E1E28AE24006A58FB /* AppDelegate.m */,
 				8E816D701E28AE24006A58FB /* ViewController.h */,
 				8E816D711E28AE24006A58FB /* ViewController.m */,
+				8E816D9D1E28B292006A58FB /* CharacterTableCell.h */,
+				8E816D9E1E28B292006A58FB /* CharacterTableCell.m */,
+				8E0B994C1E47795800B819AE /* CollectionViewDataSource.h */,
+				8E0B994D1E47795800B819AE /* CollectionViewDataSource.m */,
 				8E816D731E28AE24006A58FB /* Main.storyboard */,
 				8E816D761E28AE24006A58FB /* Assets.xcassets */,
 				8E816D781E28AE24006A58FB /* LaunchScreen.storyboard */,
@@ -173,8 +188,6 @@
 				8E816DA91E42FF0F006A58FB /* Member.m */,
 				8E816DAB1E42FFCA006A58FB /* Camp.h */,
 				8E816DAC1E42FFCA006A58FB /* Camp.m */,
-				8E816DAE1E43035A006A58FB /* MarvelCharacterProvider.h */,
-				8E816DAF1E43035A006A58FB /* MarvelCharacterProvider.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -321,6 +334,7 @@
 				8E816DAA1E42FF0F006A58FB /* Member.m in Sources */,
 				8E816DA31E28B7EA006A58FB /* Character.m in Sources */,
 				8E816DB01E43035A006A58FB /* MarvelCharacterProvider.m in Sources */,
+				8E0B994E1E47795800B819AE /* CollectionViewDataSource.m in Sources */,
 				8E816D721E28AE24006A58FB /* ViewController.m in Sources */,
 				8E816D6F1E28AE24006A58FB /* AppDelegate.m in Sources */,
 				8E816D6C1E28AE24006A58FB /* main.m in Sources */,
