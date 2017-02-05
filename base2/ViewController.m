@@ -86,12 +86,6 @@
     NSMutableArray *memberArray = [NSMutableArray arrayWithArray:[camp getMembers]];
     [memberArray removeObjectAtIndex:indexPath.row];
     
-    //動畫
-//    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    
-    //不用動畫
-//    [tableView reloadData];
-    
 }
 
 - (void)tableView:(UITableView*)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath {
