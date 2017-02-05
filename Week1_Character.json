@@ -1,0 +1,67 @@
+[
+	{
+		"campName": "Avengers",
+		"members": [
+			{
+				"name": "Iron Man",
+				"profileImageName": "profile_ironman",
+				"backgroundImageName": "background_ironman"
+			},
+			{
+				"name": "Captain America",
+				"profileImageName": "profile_ca",
+				"backgroundImageName": "background_ca"
+			},
+			{
+				"name": "Black Widow",
+				"profileImageName": "profile_bw",
+				"backgroundImageName": "background_bw"
+			},
+			{
+				"name": "Hulk",
+				"profileImageName": "profile_hulk",
+				"backgroundImageName": "background_hulk"
+			},
+			{
+				"name": "Hawkeye",
+				"profileImageName": "profile_hawkeye",
+				"backgroundImageName": "background_hawkeye"
+			},
+			{
+				"name": "Thor",
+				"profileImageName": "profile_thor",
+				"backgroundImageName": "background_thor"
+			}
+		]
+	},
+	{
+		"campName": "X-MEN",
+		"members": [
+			{
+				"name": "Wolverine",
+				"profileImageName": "profile_wolverine",
+				"backgroundImageName": "background_wolverine"
+			},
+			{
+				"name": "Beast",
+				"profileImageName": "profile_beast",
+				"backgroundImageName": "background_beast"
+			},
+			{
+				"name": "Storm",
+				"profileImageName": "profile_storm",
+				"backgroundImageName": "background_storm"
+			},
+			{
+				"name": "Gambit",
+				"profileImageName": "profile_gambit",
+				"backgroundImageName": "background_gambit"
+			},
+			{
+				"name": "Cyclops",
+				"profileImageName": "profile_cyclops",
+				"backgroundImageName": "background_cyclops"
+			}
+		]	
+	}
+]
