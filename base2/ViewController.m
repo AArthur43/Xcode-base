@@ -83,9 +83,9 @@
 //    NSMutableArray *characters = _sides[indexPath.section];
     NSArray<Camp*> *array = [MarvelCharacterProvider sharedProvider].camps;
     Camp *camp = array[indexPath.section];
-    NSMutableArray *memberArray = [NSMutableArray arrayWithArray:[camp getMembers]];
-    [memberArray removeObjectAtIndex:indexPath.row];
-    //test1
+    NSArray *memberArray = [NSMutableArray arrayWithArray:[camp getMembers]];
+    //[memberArray removeObjectAtIndex:indexPath.row];
+    
 }
 
 - (void)tableView:(UITableView*)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath*)indexPath {
